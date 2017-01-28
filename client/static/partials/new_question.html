@@ -1,0 +1,39 @@
+<!-- this partial is using the new controller -->
+<p class="logout-btn" ng-click="logout()">Log out</p>
+
+
+<!-- show prompt for errors and messages -->
+<div class="error-message">
+    <h2>{{error_message}}</h2>
+</div>
+
+
+
+<h1>New Question</h1>
+
+
+<div class="new-question-wrapper">
+
+    <label>
+        <h4>Question</h4>
+        <textarea ng-model="newQuestion.question"></textarea>
+    </label>
+
+    <label>
+        <h4>Correct Answer:</h4>
+        <input ng-model="newQuestion.correct_answer">
+    </label>
+
+    <label>
+        <h4>Fake Answer 1:</h4>
+        <input ng-model="newQuestion.fake_answer1">
+    </label>
+
+    <label>
+        <h4>Fake Answer 2:</h4>
+        <input ng-model="newQuestion.fake_answer2">
+    </label>
+
+    <button ng-click="cancel()">cancel</button>
+    <button ng-click="submit()">submit</button>
+</div>

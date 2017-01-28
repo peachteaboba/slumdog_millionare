@@ -1,0 +1,172 @@
+.top-menu{
+    /*outline: 1px dotted red;*/
+
+
+}
+
+.logout-btn{
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    /*outline: 2px dotted blue;*/
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.logout-btn:hover{
+    cursor: pointer;
+}
+
+.login-mask{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+}
+.login-prompt{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 200px);
+    text-align: center;
+}
+.error{
+    color: red;
+}
+.play-wrapper{
+    /*outline: 1px dotted red;*/
+    width: 400px;
+    height: 150px;
+    margin: 50px auto;
+    background-color: gray;
+    text-align: center;
+}
+
+.play-btn{
+    width: 200px;
+    height: 70px;
+    margin-top: 25px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 2em;
+}
+
+label{
+    display: block;
+}
+
+h4{
+    display: inline-block; vertical-align: top;
+    width: 25%
+}
+
+input{
+    display: inline-block; vertical-align: top;
+    width: 70%;
+    margin-left: 2%;
+}
+textarea{
+    display: inline-block; vertical-align: top;
+    width: 70%;
+    margin-left: 2%;
+}
+
+.new-question-wrapper{
+    text-align: right;
+    /*outline: 1px dotted red;*/
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+
+.error-message{
+    min-width: 200px;
+    /*height: 100px;*/
+    /*outline: 1px dotted red;*/
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error-message h2{
+    color: red;
+}
+
+.message-message{
+    min-width: 200px;
+    /*height: 100px;*/
+    /*outline: 1px dotted red;*/
+    margin-top: 20px;
+    text-align: center;
+}
+
+.message-message h2{
+    color: green;
+}
+.play-wrapperr p{
+    line-height: 2px;
+}
+
+
+.question{
+    outline: 1px solid blue;
+    min-height: 100px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    /*text-align: left !important;*/
+}
+
+.question input{
+    display: inline-block;
+}
+.question label{
+    display: inline-block;
+    position: absolute;
+    left: 70px;
+
+}
+th{
+    width: 200px;
+}
+table{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end*/

@@ -1,0 +1,59 @@
+<!-- playController -->
+
+<div class="play-wrapperr">
+    <p>Hi {{name}}!</p>
+    <p>Choose an answer for each of the questions and submit the test once done.</p>
+    <p>Good luck!</p>
+
+    <!-- list 3 random questions -->
+
+
+    <!-- show prompt for errors -->
+    <div class="error-message">
+        <h2>{{error_message}}</h2>
+    </div>
+
+
+    <!-- display the questions -->
+
+    <div class="question">
+        <p>1. {{questions[0].question}}</p>
+        <input type="radio" name="answer1" ng-model="answer.one" checked=false value="{{questions[0].answersArr[0]}}"><label>{{questions[0].answersArr[0]}}</label>
+        <input type="radio" name="answer1" ng-model="answer.one" checked=false value="{{questions[0].answersArr[1]}}"><label>{{questions[0].answersArr[1]}}</label>
+        <input type="radio" name="answer1" ng-model="answer.one" checked=false value="{{questions[0].answersArr[2]}}"><label>{{questions[0].answersArr[2]}}</label>
+    </div>
+
+    <div class="question">
+        <p>2. {{questions[1].question}}</p>
+        <input type="radio" name="answer2" ng-model="answer.two" checked=false value="{{questions[1].answersArr[0]}}"><label>{{questions[1].answersArr[0]}}</label>
+        <input type="radio" name="answer2" ng-model="answer.two" checked=false value="{{questions[1].answersArr[1]}}"><label>{{questions[1].answersArr[1]}}</label>
+        <input type="radio" name="answer2" ng-model="answer.two" checked=false value="{{questions[1].answersArr[2]}}"><label>{{questions[1].answersArr[2]}}</label>
+    </div>
+
+    <div class="question">
+        <p>3. {{questions[2].question}}</p>
+        <input type="radio" name="answer3" ng-model="answer.three" checked=false value="{{questions[2].answersArr[0]}}"><label>{{questions[2].answersArr[0]}}</label>
+        <input type="radio" name="answer3" ng-model="answer.three" checked=false value="{{questions[2].answersArr[1]}}"><label>{{questions[2].answersArr[1]}}</label>
+        <input type="radio" name="answer3" ng-model="answer.three" checked=false value="{{questions[2].answersArr[2]}}"><label>{{questions[2].answersArr[2]}}</label>
+    </div>
+
+
+
+
+
+
+    <button ng-click="cancel()">cancel</button>
+    <button ng-click="submit()">submit</button>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+

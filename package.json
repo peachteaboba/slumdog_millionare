@@ -1,0 +1,14 @@
+{
+  "name": "Triva",
+  "version": "0.0.1",
+  "description": "MEAN Belt Exam",
+  "main": "server.js",
+  "author": "Andy_Feng",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "latest",
+    "colors": "^1.1.2",
+    "express": "latest",
+    "mongoose": "latest"
+  }
+}

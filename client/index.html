@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Registration</title>
+    <link rel='stylesheet' href='static/css/index.css'>
+    <script type="text/javascript" src="angular/angular.min.js"></script>
+    <script type="text/javascript" src="angular-route/angular-route.min.js"></script>
+    <script>
+        // Create Angular App
+        var app = angular.module("myApp", ['ngRoute']);
+
+        // Configure Angular Routes
+        app.config(function($routeProvider) {
+            $routeProvider
+                .when('/',{
+                    templateUrl: 'static/partials/home.html',
+                    controller:'homeController'
+                })
+                .when('/score/:score',{
+                    templateUrl: 'static/partials/home.html',
+                    controller:'homeController'
+                })
+                .when('/add', {
+                    templateUrl: 'static/partials/new_question.html',
+                    controller: 'newController'
+                })
+                .when('/play_game', {
+                    templateUrl: 'static/partials/play_game.html',
+                    controller: 'playController'
+                })
+                .otherwise({
+                    redirectTo: '/'
+                })
+        });
+    </script>
+    <script type="text/javascript" src="static/js/factories.js"></script>
+    <script type="text/javascript" src="static/js/controllers.js"></script>
+
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="static/img/fav.png"/>
+
+
+
+</head>
+
+<body>
+
+    <div class="top-menu">
+        <a href="/#!/">Home</a> | <a href="/#!/add">Add a Question</a>
+    </div>
+
+
+    <div ng-view=""></div>
+
+</body>
+</html>

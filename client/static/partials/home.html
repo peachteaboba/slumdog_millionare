@@ -1,0 +1,87 @@
+<!-- this partial is using the home controller -->
+<p class="logout-btn" ng-click="logout()">Log out</p>
+
+
+
+<!-- making a mask to cover the page if the user is not logged in -->
+<div class="login-mask" ng-show="showPrompt">
+    <div class="login-prompt">
+        <!-- display error message if there is one -->
+        <p class="error">{{error_login}}</p>
+
+
+
+
+
+        <!-- this is where we ask the user to enter name -->
+        <p>Name:</p>
+        <input type="text" ng-model="name">
+        <button ng-click="enter()">Enter</button>
+
+    </div>
+
+</div>
+
+
+<!-- show prompt for errors -->
+<div class="error-message">
+    <h2>{{error_message}}</h2>
+</div>
+<!-- show prompt for messages -->
+<div class="message-message">
+    <h2>{{message}}</h2>
+</div>
+
+
+
+<!-- play game -->
+<div class="play-wrapper">
+
+    <button class="play-btn" ng-click="playGame()">Play!</button>
+
+    <p>Click the button above to start the trivia game</p>
+
+</div>
+
+
+
+<!-- show scores -->
+
+Search: <input type="text" ng-model="search">
+<table>
+    <thead>
+        <th>Name:</th>
+        <th>Score:</th>
+        <th>Percentage:</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="s in scores | filter:search">
+            <td>{{s.name}}</td>
+            <td>{{s.score}}/3</td>
+            <td>{{((s.score/3)*100).toFixed(1)}}%</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
